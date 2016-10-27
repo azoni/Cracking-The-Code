@@ -1,5 +1,6 @@
 import sys
 
+#Solution using a Set.
 def isUnique(s):
     charsTable = set()
     for c in s:
@@ -8,6 +9,7 @@ def isUnique(s):
         charsTable.add(c)
     return True
 
+#No Buffers
 def noBuffer(s):
     sortedStr = sorted(s)
     for i in range(len(sortedStr) - 1):
