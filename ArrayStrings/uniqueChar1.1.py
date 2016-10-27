@@ -17,9 +17,23 @@ def noBuffer(s):
            return False
     return True
 
+#Histagram style
+def histagram(s):
+    strLen = len(s)
+    if strLen > 128:
+        return False
+    charArr = [0] * 128
+    for i in range(strLen):
+        val = ord(s[i])
+        if charArr[val] > 0:
+            return False
+        charArr[val] += 1
+    return True
+
 def main():
     w = sys.argv[1]
     print('User Input: {}: {}'.format(w, isUnique(w)))
     print('User Input: {}: {}'.format(w, noBuffer(w)))
-
+    print('User Input: {}: {}'.format(w, histagram(w)))
+    
 main()
