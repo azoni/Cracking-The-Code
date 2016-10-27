@@ -7,3 +7,5 @@
 1.4 Write a method to replace all spaces in a string with "%20". You may assume that the string has sufficient space at the end of the string to hold the additional characters, and that you are given the "true" length of the string. 
 
 1.5 Implement a method to perform basic string compression using the counts of repeated characters. For example, the string aabcccccaaa would become a2b1c5a3. if the "compressed" string would not become smaller than the original string, your method should return the original string. You can assume the string has only upper and lower case letters (a-z).
+
+1.6 Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees. Can you do this in place?
