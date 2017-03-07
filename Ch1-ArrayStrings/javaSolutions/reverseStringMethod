@@ -1,0 +1,7 @@
+   public static String reverseString(String theString) {
+      if(theString.length() == 1) {
+         return theString;
+      } else {
+         return reverseString(theString.substring(1)) + theString.charAt(0);
+      }
+   }
