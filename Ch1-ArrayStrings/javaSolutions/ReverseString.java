@@ -5,16 +5,19 @@
  */
 public class ReverseString {
 
-  // Main method.
-  // @param theArgs command line arguments
+  /**
+   * Main method. Prints the reverse of a string entered as an argument to the
+   * @param theArgs command line argument
+   */
   public static void main(String[] thArgs) {
-    String reversed = reverseString("Hello");
-    System.out.println(reversed);
+    System.out.println(reverseString(theArgs[0]));
   }
 
-  // Returns a reversed version of the given string.
-  // @param theString a valid string
-  // @return a reversed version of the given string
+  /**
+   * Returns a reversed version of the given string.
+   * @param theString a valid string
+   * @return a reversed version of the given string
+   */
   public static String reverseString(String theString) {
     StringBuilder reversed = new StringBuilder();
 
